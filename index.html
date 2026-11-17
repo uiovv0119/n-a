@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f9e5db" />
+    <title>陈菲诺，生日快乐</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Serif+SC:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .notes { display: grid; gap: 26px; }
+      .notes .letter { padding: clamp(26px, 4vw, 42px); font-size: 14px; }
+      .notes .note-one { transform: rotate(1.3deg); }
+      .notes .note-two { transform: rotate(-1.1deg); background: #fff5e7; box-shadow: -11px 12px 0 rgba(218, 161, 107, .2); }
+      .note-label { margin: 0 0 20px; color: #bd7168; font: 11px sans-serif; letter-spacing: .17em; }
+      .photo-1 { background-image: url("./images/photo-1.jpg"); background-position: 60% center; }
+      .photo-2 { background-image: url("./images/photo-2.jpg"); background-position: center 44%; }
+      .photo-3 { background-image: url("./images/photo-3.jpg"); background-position: center 48%; }
+      .photo-4 { background-image: url("./images/photo-4.jpg"); background-position: center; }
+      .photo-5 { background-image: url("./images/photo-5.jpg"); background-position: center 42%; }
+      .photo-6 { background-image: url("./images/photo-6.jpg"); background-position: center; }
+      .photo-7 { background-image: url("./images/photo-7.jpg"); background-position: center 39%; }
+      .photo-8 { background-image: url("./images/photo-8.jpg"); background-position: center; }
+      .photo-9 { background-image: url("./images/photo-9.jpg"); background-position: center; }
+      .photo, .lightbox-photo { background-size: contain; background-repeat: no-repeat; background-color: #efe3d7; }
+      .gallery { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .photo-1, .photo-2, .photo-3, .photo-4, .photo-5, .photo-6, .photo-7, .photo-9 { grid-column: span 1 !important; min-height: 0 !important; aspect-ratio: 3 / 4; }
+      .photo-8 { grid-column: span 4 !important; min-height: 0 !important; aspect-ratio: 16 / 7; }
+      @media (max-width: 650px) { .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); } .photo-1, .photo-2, .photo-3, .photo-4, .photo-5, .photo-6, .photo-7, .photo-9 { grid-column: span 1 !important; } .photo-8 { grid-column: span 2 !important; } }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero" id="home" aria-label="生日欢迎页">
+        <div class="paper-texture"></div>
+        <span class="sparkle sparkle-one">✦</span><span class="sparkle sparkle-two">✦</span><span class="sparkle sparkle-three">✦</span>
+        <p class="eyebrow">FOR THE LOVELIEST YOU</p>
+        <h1><span>陈菲诺</span>生日快乐！！</h1>
+        <p class="hero-note">美好的事物一定会在新一岁如期而至。</p>
+        <div class="cake-wrap" aria-label="生日蛋糕插画">
+          <div class="flame"></div><div class="candle"></div>
+          <div class="cake-cherry"></div>
+          <div class="cake-layer layer-top"><i></i><i></i><i></i></div>
+          <div class="cake-layer layer-middle"><i></i><i></i><i></i><i></i></div>
+          <div class="cake-layer layer-bottom"><i></i><i></i><i></i><i></i></div>
+          <div class="cake-plate"></div>
+        </div>
+        <a class="enter" href="#memories"><span>往下看看</span><b>↓</b></a>
+      </section>
+
+      <section class="memories" id="memories">
+        <header class="section-heading reveal">
+          <p class="eyebrow">A LITTLE ALBUM</p>
+          <h2>我们的<span>一些瞬间</span></h2>
+          <p>一定要点进每一张图片！</p>
+        </header>
+        <div class="gallery">
+          <button class="photo photo-1 reveal" data-caption="送花使者"><span>01</span></button>
+          <button class="photo photo-2 reveal" data-caption="刚来澳不久的陈菲诺一枚"><span>02</span></button>
+          <button class="photo photo-5 reveal" data-caption="好美好魅"><span>03</span></button>
+          <button class="photo photo-7 reveal" data-caption="如果不做这个网站真的不记得有这张照片了你知道吗！"><span>04</span></button>
+          <button class="photo photo-4 reveal" data-caption="表情包王者"><span>05</span></button>
+          <button class="photo photo-6 reveal" data-caption="神级coser"><span>06</span></button>
+          <button class="photo photo-3 reveal" data-caption="人最齐的一次合照"><span>07</span></button>
+          <button class="photo photo-9 reveal" data-caption="这张真的特别成熟 特别姐感 特别美"><span>08</span></button>
+          <button class="photo photo-8 reveal" data-caption="三年级的我们"><span>09</span></button>
+        </div>
+      </section>
+
+      <section class="wishes" id="wishes">
+        <div class="wish-intro reveal">
+          <p class="eyebrow">WORDS FROM OUR HEARTS</p>
+          <h2>写给<span>特别的你</span></h2>
+          <p>新的一岁，希望你依然有很多想做的事，也有时间慢慢完成它们。</p>
+          <div class="flower">✽</div>
+        </div>
+        <div class="notes reveal">
+          <article class="letter note-one">
+            <p class="note-label">FROM CLORIS</p>
+            <p>To 豆姐：
+              祝我们的学霸、美女、神级coser、王者高手陈菲诺17岁生日快乐！（鼓掌x9999） 新的一岁，祝你辩论越发犀利出彩，对学业成绩运筹帷幄，能遇见更多同频共振的人，度过快乐且充实的一岁。虽然这些祝福我们每年都说，我偶尔也会感慨新的一岁有时并没带来什么翻天覆地的变化，但或许不变应万变，只要安稳幸福的度过每一天，就代表着我们都在慢慢变好。
+<br />成为你的朋友是很幸福的事。有时我还是会回想起我们以前在协和做同学的日子，那时候是多么的纯粹却美好，每天互相分享八卦、抄作业，放学去中庚觅食。那时候的我以为这些不过是普通且平凡的一天，可直到现在意识到我们早已经分道扬镳，才发现那时的时光弥足珍贵。虽然我们现在分隔两地，但我也依然相信那时的回忆和经历都共同塑造了现在的你和我。即使相隔千里，但距离隔不开心意，我也依然对你送上最真挚的祝福～ 希望你新的一岁幸福快乐，我们上海见！！！</p>
+            <p class="signature">—— Cloris <br /><small>2026 · 生日快乐</small></p>
+          </article>
+          <article class="letter note-two">
+            <p class="note-label">FROM KATRINA </p>
+            <p>么么么么哒亲爱的陈豆豆生日快乐！！ 一转眼咋都17岁了😭😭我们好想你啊。你觉得今年过的怎么样 有没有什么很特别的事 有没有很想我们😁 你今天有啥安排不 （虽然你已经和朋友提前过过生日了）好想给你线下过生日哦。。其实我特别喜欢17岁这个年龄 比16岁成熟一点比18岁青春一点 感觉这是整个人生里最青春的年龄 好美好啊。。。 我们可以一起和你过这么多个生日也好幸福啊。。 我去还有一年就要成年了啊 好可怕好可怕 但是不管怎么样先不管以后的事 好好享受当下的青春年华吧✊✊ 希望你的17岁是可以难忘的幸福的顺利的 今年我们也要一起创作美好的回忆✊希望我们也可以是你17岁里很重要的一部分（当然希望可以不止是17岁😁） 过了这么多年哦我们一起经历了很多然后就马上要迎来成年了时间过的太快了呀 我还清晰的记得那个小学时的小豆豆啊  然后你现在是大豆豆了 希望你今年可以又有一点点有意义的收获呀 然后我们再一起出很多很多cos 把之前画的饼全圆上！ 然后我们三个再在一起打很多很多王者😁 我们依旧是很爱你的好吧 每年必说的爱你不可落下😙 豆豆在17岁全力的gogogo吧！！！ 生日快乐！！<br /></p>
+            <p class="signature">—— 卡卡<br /><small>2026 · 生日快乐</small></p>
+          </article>
+        </div>
+      </section>
+      <footer>MADE FOR DOUDOU CHEN <span>♥</span></footer>
+    </main>
+    <dialog class="lightbox" id="lightbox"><button class="close" aria-label="关闭">×</button><div class="lightbox-photo"></div><p></p></dialog>
+    <script src="app.js"></script>
+  </body>
+</html>
